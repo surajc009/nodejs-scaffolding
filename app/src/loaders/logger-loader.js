@@ -32,7 +32,7 @@ const productionFormat = format.combine(
 
 const transport = new transports.DailyRotateFile({
   dirname      : logPathDirectory,
-  filename     : "cms-api-%DATE%.log",
+  filename     : "PlaceholderProjectName-%DATE%.log",
   datePattern  : "YYYY-MM-DD-HH",
   zippedArchive: true
 })

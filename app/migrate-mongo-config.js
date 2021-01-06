@@ -7,7 +7,7 @@ const config = {
     url: applicationConfig.mongodb.mongoDatabase,
 
     // TODO Change this to your database name:
-    databaseName: applicationConfig.mongodb.mongoDatabase || "cms",
+    databaseName: applicationConfig.mongodb.mongoDatabase || "PlaceholderProjectName",
 
     options: {
       useNewUrlParser   : true, // removes a deprecation warning when connecting

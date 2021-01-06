@@ -25,7 +25,7 @@ class ApplicationLoader {
   }
 
   registerMiddleware() {
-    app.use(addUniqueRequestId)
+            app.use(addUniqueRequestId)
     app.use(startProfile)
     app.use(bodyParser.json())
     app.use(bodyParser.urlencoded({ extended: true }))
@@ -39,7 +39,7 @@ class ApplicationLoader {
     resp.send({
       statusCode: 200,
       message   : "Application is running..!!",
-      uuid      : req.uuid
+          uuid     : req.uuid
     })
     next()
   }

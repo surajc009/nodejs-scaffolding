@@ -9,15 +9,15 @@ if (envFound.error) {
 
 module.exports = {
   port: process.env.PORT || 3000,
-  api: {
+  api : {
     prefix: "/api"
   },
   mongodb: {
     mongoDatabaseHost: process.env.DB_MONGO_HOST_URL,
-    mongoDatabase: process.env.DB_MONGO_DATABASE,
-    connectionUri:
+    mongoDatabase    : process.env.DB_MONGO_DATABASE,
+    connectionUri    :
       process.env.DB_MONGO_HOST_URL + "/" + process.env.DB_MONGO_DATABASE
   },
   logPathDirectory: process.env.LOG_PATH_DIR + "/",
-  loggingEnabled: true
+  loggingEnabled  : true
 }

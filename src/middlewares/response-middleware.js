@@ -48,7 +48,7 @@ const setErrorResponse = (response, body, statusCode) => {
     message:
       body.error.message || body.error || responseConfig.apiResponse.error,
     error_code: statusCode,
-    errors: []
+    errors    : []
   }
 }
 

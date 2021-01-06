@@ -31,24 +31,24 @@ const productionFormat = format.combine(
 )
 
 const transport = new transports.DailyRotateFile({
-  dirname: logPathDirectory,
-  filename: "cms-api-%DATE%.log",
-  datePattern: "YYYY-MM-DD-HH",
+  dirname      : logPathDirectory,
+  filename     : "cms-api-%DATE%.log",
+  datePattern  : "YYYY-MM-DD-HH",
   zippedArchive: true
 })
 
 let logger = createLogger({
-  level: level,
-  format: developmentFormat,
+  level     : level,
+  format    : developmentFormat,
   transports: [new transports.Console()]
 })
 
 if (process.env.NODE_ENV === "production") {
   logger = createLogger({
     exitOnError: false,
-    level: level,
-    format: productionFormat,
-    transports: [transport]
+    level      : level,
+    format     : productionFormat,
+    transports : [transport]
   })
 }
 

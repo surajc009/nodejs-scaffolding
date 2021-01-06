@@ -3,7 +3,7 @@ const config = require("../config/config")
 
 exports.connectMongo = () => {
   return mongoose.connect(config.mongodb.connectionUri, {
-    useNewUrlParser: true,
+    useNewUrlParser   : true,
     useUnifiedTopology: true
   })
 }

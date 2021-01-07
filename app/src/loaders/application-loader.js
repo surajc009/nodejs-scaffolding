@@ -37,14 +37,14 @@ class ApplicationLoader {
   healthCheck(req, resp, next) {
     resp.send({
       statusCode: 200,
-      message: "Application is running..!!",
-      uuid: req.uuid
+      message   : "Application is running..!!",
+      uuid      : req.uuid
     })
     next()
   }
 
   registerRoutes() {
-    routes(app)
+    app.use("/new", routes)
   }
 
   async bootServer() {

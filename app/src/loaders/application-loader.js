@@ -44,7 +44,7 @@ class ApplicationLoader {
   }
 
   registerRoutes() {
-    app.use("/new", routes)
+    app.use("/app", routes)
   }
 
   async bootServer() {

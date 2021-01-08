@@ -4,7 +4,7 @@ const applicationConfig = require("./src/config/config")
 const config = {
   mongodb: {
     // TODO Change (or review) the url to your MongoDB:
-    url: applicationConfig.mongodb.mongoDatabase,
+    url: applicationConfig.mongodb.connectionUri,
 
     // TODO Change this to your database name:
     databaseName: applicationConfig.mongodb.mongoDatabase || "PlaceholderProjectName",

@@ -11,6 +11,6 @@ module.exports = {
   },
 
   async down(db, client) {
-    await db.contacts.drop()
+    await db.collection("Person").drop()
   }
 }

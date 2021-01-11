@@ -5,9 +5,11 @@ module.exports = {
   500: "",
 
   applicationMessages: {
-    dbConnectionError: "Failed to connect application database!",
-    appStarted       : "Application started at port: ",
-    logDirError      : "Failed to create log directory at location "
+    dbConnectionError     : "Failed to connect application database!",
+    dbCloseConnectionError: "Failed to close application database!",
+    deleteCollectionError : "Failed to clear collections from database!",
+    appStarted            : "Application started at port: ",
+    logDirError           : "Failed to create log directory at location "
   },
   apiResponse: {
     success            : "Success",

@@ -11,3 +11,6 @@ Steps to Setup the project -
 ## Migrations:
 1. `npx migrate-mongo create your-migration-file-name`
 2. `npx migrate-mongo up`
+
+## Note
+1. For every change in the model, create a new migration and verify if down migration reverts the DB to previous state
